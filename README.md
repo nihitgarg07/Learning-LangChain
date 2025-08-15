@@ -8,27 +8,6 @@ This repository contains small, focused code snippets and experiments for learni
 
 ---
 
-## 📁 Folder Structure
-
-LANGCHAIN_MODELS/
-│
-├── ChatModels/
-│ ├── chatmodel_openai.py # Using OpenAI's chat models (ChatOpenAI)
-│ ├── huggingface_local.py # Running local HF models as chat models
-│ └── huggingface_api.py # Using HF endpoint-based chat models
-│
-├── EmbeddedModels/
-│ ├── embedding_hf_local.py # Local Hugging Face embeddings
-│ ├── embeddings_openai_docs.py # OpenAI embeddings for documents
-│ └── embeddings_openai_querry.py # Query-based embedding use
-│
-├── LLMs/
-│ └── llm_demo.py # Basic LLM interaction examples
-│
-├── .env # Environment variables (API keys etc.)
-├── .gitignore # Ignoring sensitive or unnecessary files
-├── requirements.txt # Python dependencies
-└── README.md # You're here!
 
 
 ## 🧠 Purpose
@@ -48,18 +27,17 @@ This repo is part of my **LangChain learning journey**, where I:
    git clone https://github.com/your-username/langchain-models-learning.git
    cd langchain-models-learning
 
-Install dependencies
+2. Install dependencies
 
-pip install -r requirements.txt
-Set your environment variables in .env
+    pip install -r requirements.txt
+
+3. Set your environment variables in .env
+    OPENAI_API_KEY=your_openai_key
+    HUGGINGFACEHUB_API_TOKEN=your_hf_token
 
 
-OPENAI_API_KEY=your_openai_key
-HUGGINGFACEHUB_API_TOKEN=your_hf_token
-
-
-Run a script
-python ChatModels/chatmodel_openai.py
+4. Run a script
+    python ChatModels/chatmodel_openai.py
 
 
 
