@@ -17,6 +17,7 @@ with open(Current_working_directory+'\\prompts\\chat_history.txt') as f:
 
 # create prompt
 
-prompt = chat_prompt_template.invoke({'chat_history':chat_history,'querry':'where is my refund'})
+prompt = chat_prompt_template.invoke({'chat_history':chat_history,
+                                      'querry':'where is my refund'})
 
 print(prompt)
