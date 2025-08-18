@@ -7,6 +7,7 @@ This repository contains small, focused code snippets and experiments for learni
 - 🔹 LLMs and Prompt Interaction  
 - 🔹 Prompt Templates (JSON-driven)  
 - 🔹 Streamlit UI for Prompt Testing  
+- 🔹 Messaging & Conversation History (Message Placeholder, Chat Prompts, Chatbot)  
 
 ---
 
@@ -18,6 +19,7 @@ This repo is part of my **LangChain learning journey**, where I:
 - Build small hands-on examples  
 - Organize and version my learning  
 - Experiment with UI-driven prompt generation  
+- Explore conversational flows and message placeholders  
 
 ---
 
@@ -45,7 +47,6 @@ This repo is part of my **LangChain learning journey**, where I:
 
     streamlit run prompts/prompts_ui.py
 
-
 🛠 Tools & Libraries
     LangChain
 
@@ -63,3 +64,7 @@ This repo is part of my **LangChain learning journey**, where I:
     Some files may overlap or experiment with the same concept in different ways.
 
     prompts_ui.py lets you test prompts interactively using Streamlit with different styles & lengths.
+
+    chat_prompt_template.py and message_placeholder.py demonstrate how to use message placeholders for injecting conversation history.
+
+    chatbot.py explores a simple chatbot workflow using LangChain’s messaging utilities

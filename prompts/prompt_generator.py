@@ -1,5 +1,8 @@
 from langchain_core.prompts import PromptTemplate
 
+
+# Setting the prompt in prompt template
+# this is used in prompts_ui.py file
 template = PromptTemplate(template="""
                             Please summarize the research paper titled "{paper_input}" with the following
                             specifications:
