@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+# Inheriting base
 class Student(BaseModel):
     name : str
 
