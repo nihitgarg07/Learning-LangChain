@@ -30,3 +30,9 @@ Streamlit
 
 # prompts
 langchain_core
+
+# typeDict
+typing
+
+# Pydantic
+Pydantic
