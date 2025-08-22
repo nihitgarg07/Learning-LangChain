@@ -8,7 +8,7 @@ This repository contains small, focused code snippets and experiments for learni
 - 🔹 Prompt Templates (JSON-driven)  
 - 🔹 Streamlit UI for Prompt Testing  
 - 🔹 Messaging & Conversation History (Message Placeholder, Chat Prompts, Chatbot)  
-- 🔹 Structured outputs 
+- 🔹 Structured outputs with typedict , pydantic , json_Schema
 
 ---
 
