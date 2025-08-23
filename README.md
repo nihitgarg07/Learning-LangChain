@@ -10,6 +10,7 @@ This repository contains small, focused code snippets and experiments for learni
 - 🔹 Messaging & Conversation History (Message Placeholder, Chat Prompts, Chatbot)  
 - 🔹 Structured outputs with typedict , pydantic , json_Schema
 - 🔹 output parsers with string Output Parser , json output parser , structured output parser , pydantic output parser
+- 🔹 chain with sequential , parallel and conditional chains
 
 
 ---
