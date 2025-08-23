@@ -5,7 +5,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain.schema.runnable import RunnableParallel ,RunnableBranch, RunnableLambda
 from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
-from typing import Literal
+from typing import Literal, cast
 
 load_dotenv()
 
@@ -54,8 +54,8 @@ branch_chain = RunnableBranch(
 
 
 branch_chain = RunnableBranch(
-    (lambda x: x.sentiment == "positive" , prompt2 | model | parser),
-    (lambda x: x.sentiment == 'negative' , prompt3 | model | parser),
+    (lambda x: cast(Feedback, x).sentiment == "positive" , prompt2 | model | parser),
+    (lambda x: cast(Feedback, x).sentiment == 'negative' , prompt3 | model | parser),
     RunnableLambda(lambda x: 'could not find sentiment') # Here we have converted this lambda function to runnable lamda as it is not a chain
 )
 
